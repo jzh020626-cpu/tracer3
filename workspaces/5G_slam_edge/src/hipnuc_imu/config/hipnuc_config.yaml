@@ -1,0 +1,7 @@
+tracer3_IMU_publisher:
+    ros__parameters:
+        serial_port: "/dev/imu"
+        baud_rate: 115200
+        yaw_offset_deg: 0.0
+        frame_id: "tracer3/base_link"
+        imu_topic: "/tracer3/IMU_data"

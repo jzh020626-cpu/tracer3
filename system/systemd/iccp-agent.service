@@ -1,0 +1,17 @@
+[Unit]
+Description=ICCP Robot Agent
+After=network-online.target docker.service
+Wants=network-online.target docker.service
+
+[Service]
+Type=simple
+ExecStart=/opt/iccp-agent/agent
+WorkingDirectory=/opt/iccp-agent
+Restart=always
+RestartSec=10
+LimitNOFILE=65536
+
+Environment=AGENT_CONFIG=/etc/iccp-agent/agent.yaml
+
+[Install]
+WantedBy=multi-user.target

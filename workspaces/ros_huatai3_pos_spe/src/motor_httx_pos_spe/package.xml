@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>motor_httx_pos_spe</name>
+  <version>0.0.0</version>
+  <description>Motor control package with CAN interface</description>
+  <maintainer email="skki@todo.todo">skki</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- 基础依赖 -->
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>builtin_interfaces</depend>
+
+  <!-- 自定义消息依赖 -->
+  <build_depend>base_interfaces_demo</build_depend>
+  <exec_depend>base_interfaces_demo</exec_depend>
+
+  <!-- CAN相关依赖（Humble专用） -->
+  <depend>can_msgs</depend>
+  <depend>canopen_core</depend>
+  <depend>canopen_interfaces</depend>
+
+  <!-- 系统工具依赖 -->
+  <exec_depend>can-utils</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

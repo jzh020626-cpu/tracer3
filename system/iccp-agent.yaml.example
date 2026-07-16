@@ -1,0 +1,10 @@
+robotId: robot-3
+robotName: "robot-3"
+robotType: AGV
+operatorUrl: "http://192.168.50.42:30091"
+heartbeatIntervalSeconds: 30
+listenPort: 8090
+dockerEndpoint: "unix:///var/run/docker.sock"
+enableDDSRouter: true
+commProbeDomainId: 82
+rosSetupScript: "/opt/ros/humble/setup.bash"

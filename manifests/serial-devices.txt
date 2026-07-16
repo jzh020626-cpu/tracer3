@@ -1,0 +1,4 @@
+lrwxrwxrwx 1 root root         7  1月  1  1970 /dev/force_sensor -> ttyUSB1
+lrwxrwxrwx 1 root root         7  1月  1  1970 /dev/imu -> ttyUSB0
+crw-rw---- 1 root dialout 188, 0  1月  1  1970 /dev/ttyUSB0
+crw-rw---- 1 root dialout 188, 1  1月  1  1970 /dev/ttyUSB1

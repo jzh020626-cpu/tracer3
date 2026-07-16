@@ -1,0 +1,22 @@
+[Unit]
+Description=ICCP persistent ROS topic-rate monitor
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+Environment=HOME=/root
+Environment=ICCP_ROS_MONITOR_SOCKET=/run/iccp-ros-monitor/monitor.sock
+RuntimeDirectory=iccp-ros-monitor
+RuntimeDirectoryMode=0755
+ExecStart=/bin/bash -c 'source /usr/local/lib/iccp-agent/setup.bash && exec /usr/bin/python3 /usr/local/lib/iccp-agent/iccp_ros_monitor.py'
+Restart=on-failure
+RestartSec=5
+Nice=10
+CPUWeight=10
+CPUQuota=20%
+MemoryMax=128M
+TasksMax=32
+
+[Install]
+WantedBy=multi-user.target

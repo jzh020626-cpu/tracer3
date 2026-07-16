@@ -1,0 +1,7 @@
+Wired connection 1:802-3-ethernet:enP8p1s0:yes
+docker0:bridge:docker0:no
+测量机器人:802-11-wireless::no
+何佳闻的iPhone:802-11-wireless::no
+荣耀Magic6:802-11-wireless::no
+荣耀X50:802-11-wireless::no
+HUAWEI-B91AW8:802-11-wireless::no
